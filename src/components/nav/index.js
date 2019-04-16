@@ -6,7 +6,7 @@ import { StyledNav, StyledLink, StyledIcon } from './styled';
 const Nav = () => (
   <StyledNav>
     <StyledIcon />
-    <StyledLink to='/'>Carbon</StyledLink>
+    <StyledLink to='/'>Conjugate!</StyledLink>
   </StyledNav>
 );
 

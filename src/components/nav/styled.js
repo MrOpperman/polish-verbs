@@ -3,16 +3,16 @@ import Link from 'react-router-dom/Link';
 import { colors, pxtorem } from 'styles';
 
 // svg
-import { ReactComponent as RocketSVG } from './rocket.svg';
+import { ReactComponent as BookSVG } from 'components/nav/book.svg';
 
 export const StyledNav = styled.div`
   height: ${pxtorem(70)};
-  border-bottom: ${pxtorem(4)} ${colors.coral} solid;
-  background-color: ${colors.storm};
+  border-bottom: ${pxtorem(4)} ${colors.red} solid;
+  background-color: ${colors.white};
   padding: 0 1rem;
   display: flex;
   align-items: center;
-  color: ${colors.white};
+  color: ${colors.red};
   font-size: ${pxtorem(20)};
 `;
 
@@ -21,7 +21,7 @@ export const StyledLink = styled(Link)`
   color: inherit;
 `;
 
-export const StyledIcon = styled(RocketSVG)`
-  fill: ${colors.white};
+export const StyledIcon = styled(BookSVG)`
+  fill: ${colors.red};
   margin-right: 1rem;
 `;

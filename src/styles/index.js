@@ -8,6 +8,7 @@ export const breakpoints = {
 export const colors = {
   black: '#000000',
   white: '#FFFFFF',
+  red: '#dc143c',
   coral: '#FF6A70',
   storm: '#51516F',
   gallery: '#EEEEEE'
