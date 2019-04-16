@@ -1,7 +1,7 @@
 {
-  "name": "carbon",
+  "name": "polish-verbs",
   "version": "1.0.0",
-  "description": "React app boilerplate",
+  "description": "Polish Verbs",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --progress --config webpack/dev.config.js",
@@ -21,7 +21,7 @@
       "pre-commit": "npm run lint"
     }
   },
-  "author": "Leadhome",
+  "author": "Kyle Opperman",
   "license": "MIT",
   "dependencies": {
     "acorn": "^6.1.0",
