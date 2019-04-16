@@ -2,14 +2,13 @@ import styled from 'styled-components';
 import { breakpoints, pxtorem } from 'styles';
 
 export const VerbCard = styled.div`
-  width: 400px;
+  width: 100%;
   padding: 20px;
   border-radius: 4px;
   background-color: #ffffff;
   box-shadow: 0 9px 12px 0 rgba(7, 0, 37, 0.07),
     0 2px 4px 0 rgba(7, 0, 37, 0.06);
-  margin-bottom: 16px;
-  flex: 1 1 auto;
+  flex: 1 auto;
   @media (max-width: ${pxtorem(breakpoints.small)}) {
     margin-right: 0;
     width: 100%;
