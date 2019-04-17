@@ -18,8 +18,7 @@ export const SearchInput = styled.input`
 
 export const AlgoliaLogo = styled(AlgoliaSVG)`
   float: right;
-  top: 96px;
-  right: 18px;
+  margin-right: 2px;
   width: 39px;
-  position: absolute;
+  margin-top: -73px;
 `;
