@@ -1,19 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-import { Heading, Paragraph } from './style';
 import Verbs from 'components/verbs';
 
-const Home = () => (
+const Home = ({ history }) => (
   <div>
-    <Helmet title='Polish Verb Conjugations' />
-    <Heading>Conjugate!</Heading>
-    <Paragraph>
-      Conjugated verbs are verbs which have been changed to communicate one or
-      more of the following: person, number, gender, tense, aspect, mood, or
-      voice.
-    </Paragraph>
-    <Verbs />
+    <Helmet title='conjugate.pl' />
+    <Verbs history={history} />
   </div>
 );
+
+Home.propTypes = {
+  history: PropTypes.object
+};
 
 export default Home;

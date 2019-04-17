@@ -12,4 +12,5 @@ export const SearchInput = styled.input`
   border-radius: 4px;
   font-size: 15px;
   padding: 10px;
+  margin-top: 24px;
 `;

@@ -1,20 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { colors } from 'styles';
 import {
   VerbCard,
   VerbName,
   VerbDescription,
   ConjugatedArea,
   ConjugatedData,
-  ConjugatedHeader
+  ConjugatedHeader,
+  ButtonContainer,
+  ShowMoreButton
 } from './style';
+import { KeyboardArrowRight } from 'styled-icons/material';
 
-const Verb = ({ verb }) => (
+const Verb = ({ verb, history }) => (
   <VerbCard>
     <VerbName>
       {verb.verb} - {verb.english}
     </VerbName>
-    <VerbDescription>{verb.description}</VerbDescription>
+    {verb.perfective && (
+      <VerbDescription><b>Perfective</b>: {verb.perfective}</VerbDescription>
+    )}
+
+    {verb.frequentative && (
+      <VerbDescription><b>Frequentative</b>: {verb.frequentative}</VerbDescription>
+    )}
+
+    {(!verb.frequentative && !verb.perfective)&& (
+      <VerbDescription><b>Perfective</b>: N/A</VerbDescription>
+    )}
 
     <ConjugatedArea>
       <ConjugatedHeader>Ja: </ConjugatedHeader>
@@ -45,11 +59,18 @@ const Verb = ({ verb }) => (
       <ConjugatedHeader>Oni/One: </ConjugatedHeader>
       <ConjugatedData>{verb.oni}</ConjugatedData>
     </ConjugatedArea>
+
+    <ButtonContainer>
+      <ShowMoreButton onClick={() => history.push(`/verb?name=${verb.verb}`)}>
+        More <KeyboardArrowRight color={colors.red} height='16px' />
+      </ShowMoreButton>
+    </ButtonContainer>
   </VerbCard>
 );
 
 Verb.propTypes = {
-  verb: PropTypes.object
+  verb: PropTypes.object,
+  history: PropTypes.object
 };
 
 export default Verb;

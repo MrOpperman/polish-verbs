@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { breakpoints, pxtorem } from 'styles';
+import { breakpoints, colors, pxtorem } from 'styles';
 
 export const VerbsContainer = styled.div`
   display: grid;
@@ -13,4 +13,10 @@ export const VerbsContainer = styled.div`
   @media (max-width: ${pxtorem(breakpoints.small)}) {
     grid-template-columns: 1fr;
   }
+`;
+
+export const Paragraph = styled.h3`
+  color: ${colors.storm};
+  padding-bottom: 16px;
+  font-weight: 400;
 `;

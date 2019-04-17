@@ -6,6 +6,7 @@ import { breakpoints, pxtorem } from 'styles';
 
 // containers
 import Home from 'containers/home';
+import Verb from 'containers/verb';
 import NotFound from 'containers/not-found';
 
 // components
@@ -20,6 +21,8 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
     background-color: rgb(249, 249, 255);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 `;
 
@@ -39,6 +42,7 @@ const App = () => (
     <Container>
       <Switch>
         <Route path='/' component={Home} exact />
+        <Route path='/verb' component={Verb} />
         <Route component={NotFound} />
       </Switch>
     </Container>

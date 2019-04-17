@@ -10,7 +10,7 @@ export const colors = {
   white: '#FFFFFF',
   red: '#dc143c',
   coral: '#FF6A70',
-  storm: '#51516F',
+  storm: '#284B63',
   gallery: '#EEEEEE'
 };
 

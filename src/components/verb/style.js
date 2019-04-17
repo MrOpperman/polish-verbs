@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { breakpoints, pxtorem } from 'styles';
+import { breakpoints, pxtorem, colors } from 'styles';
 
 export const VerbCard = styled.div`
   width: 100%;
@@ -23,7 +23,7 @@ export const VerbName = styled.div`
 `;
 
 export const VerbDescription = styled.div`
-  font-size: 16px;
+  font-size: 15px;
   font-style: italic;
   text-align: center;
   padding-bottom: 8px;
@@ -44,4 +44,20 @@ export const ConjugatedHeader = styled.div`
 export const ConjugatedData = styled.div`
   color: #a9a9bb;
   font-size: 14px;
+`;
+
+export const ShowMoreButton = styled.button`
+  display: block;
+  cursor: pointer;
+  width: fit-content;
+  height: 24px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  color: ${colors.storm};
+  background-color: ${colors.white};
+`;
+
+export const ButtonContainer = styled.div`
+  display:flex; justify-content:flex-end; width:100%; padding:0;
 `;
