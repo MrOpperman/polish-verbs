@@ -9,7 +9,8 @@
     "build": "webpack --mode production --config webpack/config.js",
     "postbuild": "react-snap",
     "clean": "rimraf build",
-    "lint": "eslint -c .eslintrc src"
+    "lint": "eslint -c .eslintrc src",
+    "deploy": "webpack --mode production --config webpack/config.js && firebase deploy"
   },
   "keywords": [
     "React",
