@@ -19,15 +19,21 @@ const Verb = ({ verb, history }) => (
       {verb.verb} - {verb.english}
     </VerbName>
     {verb.perfective && (
-      <VerbDescription><b>Perfective</b>: {verb.perfective}</VerbDescription>
+      <VerbDescription>
+        <b>Perfective</b>: {verb.perfective}
+      </VerbDescription>
     )}
 
     {verb.frequentative && (
-      <VerbDescription><b>Frequentative</b>: {verb.frequentative}</VerbDescription>
+      <VerbDescription>
+        <b>Frequentative</b>: {verb.frequentative}
+      </VerbDescription>
     )}
 
-    {(!verb.frequentative && !verb.perfective)&& (
-      <VerbDescription><b>Perfective</b>: N/A</VerbDescription>
+    {!verb.frequentative && !verb.perfective && (
+      <VerbDescription>
+        <b>Perfective</b>: N/A
+      </VerbDescription>
     )}
 
     <ConjugatedArea>

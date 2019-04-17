@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import algolia from 'utils/algolia';
 
-import { VerbsContainer, Paragraph } from './style';
+import { VerbsContainer } from './style';
 
 import Verb from 'components/verb';
 import SearchBar from 'components/search-bar';
