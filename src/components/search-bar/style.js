@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ReactComponent as AlgoliaSVG } from 'assets/algolia.svg';
 
 export const SearchInput = styled.input`
   display: flex;
@@ -13,4 +14,12 @@ export const SearchInput = styled.input`
   font-size: 15px;
   padding: 10px;
   margin-top: 24px;
+`;
+
+export const AlgoliaLogo = styled(AlgoliaSVG)`
+  float: right;
+  top: 96px;
+  right: 18px;
+  width: 39px;
+  position: absolute;
 `;
