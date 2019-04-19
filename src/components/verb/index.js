@@ -66,16 +66,18 @@ const Verb = ({ verb, history }) => (
       <ConjugatedData>{verb.oni}</ConjugatedData>
     </ConjugatedArea>
 
-    <ButtonContainer>
-      <ShowMoreButton onClick={() => history.push(`/verb?name=${verb.verb}`)}>
-        More <KeyboardArrowRight color={colors.red} height='16px' />
-      </ShowMoreButton>
-    </ButtonContainer>
+    {history && (
+      <ButtonContainer>
+        <ShowMoreButton onClick={() => history.push(`/verb?name=${verb.verb}`)}>
+          More <KeyboardArrowRight color={colors.red} height='16px' />
+        </ShowMoreButton>
+      </ButtonContainer>
+    )}
   </VerbCard>
 );
 
 Verb.propTypes = {
-  verb: PropTypes.object,
+  verb: PropTypes.object.isRequired,
   history: PropTypes.object
 };
 

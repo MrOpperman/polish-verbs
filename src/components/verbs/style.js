@@ -5,6 +5,7 @@ export const VerbsContainer = styled.div`
   display: grid;
   grid-gap: 16px;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 20px;
 
   @media (max-width: ${pxtorem(breakpoints.medium)}) {
     grid-template-columns: 1fr 1fr;

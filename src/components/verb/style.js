@@ -44,6 +44,8 @@ export const ConjugatedHeader = styled.div`
 export const ConjugatedData = styled.div`
   color: #a9a9bb;
   font-size: 14px;
+  font-weight: 600;
+  padding-right: 16px;
 `;
 
 export const ShowMoreButton = styled.button`
