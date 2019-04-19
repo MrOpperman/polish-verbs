@@ -8,7 +8,7 @@ import Verb from 'components/verb';
 import SearchBar from 'components/search-bar';
 
 const getVerbs = (verbs, setVerbs, query) =>
-  algolia.search({ query }).then(res => setVerbs(res.hits));
+  algolia.search({ query, hitsPerPage: 50 }).then(res => setVerbs(res.hits));
 
 const renderVerbs = (verbs, history) => {
   const verbCollection = [];
