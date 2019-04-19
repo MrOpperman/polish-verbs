@@ -18,7 +18,7 @@ const Verb = ({ verb, history }) => (
     <VerbName>
       {verb.verb} - {verb.english}
     </VerbName>
-    {verb.perfective && (
+    {verb.perfective && !verb.imperfective && (
       <VerbDescription>
         <b>Perfective</b>: {verb.perfective}
       </VerbDescription>
@@ -30,7 +30,13 @@ const Verb = ({ verb, history }) => (
       </VerbDescription>
     )}
 
-    {!verb.frequentative && !verb.perfective && (
+    {verb.imperfective && (
+      <VerbDescription>
+        <b>Imperfective</b>: {verb.imperfective}
+      </VerbDescription>
+    )}
+
+    {!verb.frequentative && !verb.perfective && !verb.imperfective && (
       <VerbDescription>
         <b>Perfective</b>: N/A
       </VerbDescription>
