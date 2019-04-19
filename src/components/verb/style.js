@@ -3,6 +3,7 @@ import { breakpoints, pxtorem, colors } from 'styles';
 
 export const VerbCard = styled.div`
   width: 100%;
+  cursor: pointer;
   padding: 20px;
   border-radius: 4px;
   background-color: #ffffff;

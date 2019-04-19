@@ -14,7 +14,7 @@ import {
 import { KeyboardArrowRight } from 'styled-icons/material';
 
 const Verb = ({ verb, history }) => (
-  <VerbCard>
+  <VerbCard onClick={() => history.push(`/verb?name=${verb.verb}`)}>
     <VerbName>
       {verb.verb} - {verb.english}
     </VerbName>
@@ -74,7 +74,7 @@ const Verb = ({ verb, history }) => (
 
     {history && (
       <ButtonContainer>
-        <ShowMoreButton onClick={() => history.push(`/verb?name=${verb.verb}`)}>
+        <ShowMoreButton>
           More <KeyboardArrowRight color={colors.red} height='16px' />
         </ShowMoreButton>
       </ButtonContainer>
