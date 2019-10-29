@@ -5,9 +5,11 @@ import { SearchInput, AlgoliaLogo } from './style';
 const SearchBar = ({ updateQuery, updateFetch }) => (
   <>
     <SearchInput
+      minLength={2}
+      debounceTimeout={400}
       placeholder='Search...'
       onChange={e => {
-        updateQuery(e.currentTarget.value);
+        updateQuery(e.target.value);
         updateFetch(true);
       }}
     />
