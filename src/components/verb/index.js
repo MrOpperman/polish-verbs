@@ -14,10 +14,8 @@ import {
 // import { KeyboardArrowRight } from 'styled-icons/material';
 
 const Verb = ({ verb, history }) => {
-  // fucked up my data, yolo
-  verb.data[0].pronoun = 'ja';
-  verb.data.splice(1, 0, verb.data.pop());
-  verb.data[1].pronoun = 'ty';
+  const ja = verb.data.pop();
+  verb.data.unshift(ja);
 
   return (
     <VerbCard onClick={() => history.push(`/verb?name=${verb.verb}`)}>
