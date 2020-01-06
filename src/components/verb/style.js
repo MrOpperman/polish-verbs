@@ -20,19 +20,11 @@ export const VerbName = styled.div`
   color: #51516f;
   font-size: 30px;
   font-weight: 600;
-  text-align: left;
-  padding-bottom: 8px;
-`;
-
-export const TenseHeading = styled.div`
-  font-size: 16px;
-  margin-bottom: 8px;
-  color: #6d6d90;
-  font-weight: 600;
+  text-align: center;
 `;
 
 export const VerbDescription = styled.div`
-  font-size: 16px;
+  font-size: 15px;
   font-style: italic;
   text-align: center;
   padding-bottom: 8px;
@@ -41,20 +33,18 @@ export const VerbDescription = styled.div`
 
 export const ConjugatedArea = styled.div`
   display: flex;
-  height: 20px;
 `;
 
 export const ConjugatedHeader = styled.div`
-  color: #ff6a70;
-  font-size: 16px;
+  color: #4db3bf;
+  font-size: 14px;
   font-weight: 600;
   padding-right: 8px;
-  text-transform: capitalize;
 `;
 
 export const ConjugatedData = styled.div`
-  color: #4db3bf;
-  font-size: 16px;
+  color: #a9a9bb;
+  font-size: 14px;
   font-weight: 600;
   padding-right: 16px;
 `;

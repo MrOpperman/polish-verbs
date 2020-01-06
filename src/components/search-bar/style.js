@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { DebounceInput } from 'react-debounce-input';
 import { ReactComponent as AlgoliaSVG } from 'assets/algolia.svg';
 
-export const SearchInput = styled(DebounceInput)`
+export const SearchInput = styled.input`
   display: flex;
   width: 100%;
   height: 43px;
