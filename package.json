@@ -26,7 +26,7 @@
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.4.3",
-    "acorn": "^6.1.0",
+    "acorn": "^6.4.2",
     "algoliasearch": "^3.32.1",
     "prop-types": "^15.7.2",
     "query-string": "^6.4.2",
@@ -73,6 +73,6 @@
     "rimraf": "^2.6.3",
     "webpack": "4.28.4",
     "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.0"
+    "webpack-dev-server": "^3.11.2"
   }
 }
